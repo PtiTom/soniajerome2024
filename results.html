@@ -5,6 +5,25 @@
                 font-family: Arial, helvetica;
                 font-size: 14px;
             }
+            div.d1 {
+                display: inline-block;
+                background-color: darkgreen;
+                height: 30px;
+                width: 120px;
+                text-align: center;
+            }
+            div.d2 {
+                background-color: darkgreen;
+                height: 30px;
+                width: 80px;
+                text-align: center;
+            }
+            div.d3 {
+                background-color: darkgreen;
+                height: 30px;
+                width: 10px;
+                text-align: center;
+            }
         </style>
         <script>
             function getParameterByName(name, url = window.location.href) {
@@ -30,6 +49,10 @@
         </script>
     </head>
     <body>
-        <p>Bonjour et merci d'avoir voté pour &laquo;<span id="vote"></span>&raquo;.</p>
+        <p>Les résultats du vote :</p>
+        <h2>Quel est votre préféré du couple ?</h2>
+        <p>Jérôme, assurément ! <div class="d1">1228</div></p>
+        <p>Jérôme, la plupart du temps <div class="d2">604</div></p>
+        <p>Tu es pathétique Thomas Merly, on voit bien qu'il n'y a pas autant d'invités <div class="d1">1</div></p>
     </body>
 </html>
