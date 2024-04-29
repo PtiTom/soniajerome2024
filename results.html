@@ -5,22 +5,31 @@
                 font-family: Arial, helvetica;
                 font-size: 14px;
             }
+            div.d {
+                display: block;
+                height: 30px;
+                line-height: 30px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
             div.d1 {
                 display: inline-block;
                 background-color: darkgreen;
-                height: 30px;
+                color: white;
                 width: 120px;
                 text-align: center;
             }
             div.d2 {
+                display: inline-block;
                 background-color: darkgreen;
-                height: 30px;
+                color: white;
                 width: 80px;
                 text-align: center;
             }
             div.d3 {
+                display: inline-block;
                 background-color: darkgreen;
-                height: 30px;
+                color: white;
                 width: 10px;
                 text-align: center;
             }
@@ -29,8 +38,8 @@
     <body>
         <p>Les résultats du vote :</p>
         <h2>Quel est votre préféré du couple ?</h2>
-        <p>Jérôme, assurément ! <div class="d1">1228</div></p>
-        <p>Jérôme, la plupart du temps <div class="d2">604</div></p>
-        <p>Tu es pathétique Thomas Merly, on voit bien qu'il n'y a pas autant d'invités <div class="d1">1</div></p>
+        <div class="d">Jérôme, assurément ! <div class="d1">1228</div></div>
+        <div class="d">Jérôme, la plupart du temps <div class="d2">604</div></div>
+        <div class="d">Tu es pathétique Thomas Merly, on voit bien qu'il n'y a pas autant d'invités <div class="d3">1</div></div>
     </body>
 </html>
