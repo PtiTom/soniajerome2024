@@ -25,34 +25,12 @@
                 text-align: center;
             }
         </style>
-        <script>
-            function getParameterByName(name, url = window.location.href) {
-                name = name.replace(/[\[\]]/g, '\\$&');
-                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-                    results = regex.exec(url);
-                if (!results) return null;
-                if (!results[2]) return '';
-                return decodeURIComponent(results[2].replace(/\+/g, ' '));
-            }
-
-            switch(getParameterByName('vote')) {
-                case 'sonia':
-                    document.getElementById('vote').innerHTML = "Sonia est sans doute la bonté personifiée mais bon, je préfère un peu plus Jérôme";
-                    break;
-                case 'jerome':
-                    document.getElementById('vote').innerHTML = "Jérôme est vraiment le moteur de ce couple, mais bon, des fois, Sonia a de bons côtés";
-                    break;
-                default:
-                    document.getElementById('vote').innerHTML = "Je ne sais que choisir, alors à défaut : Jérôme";
-                    break;
-            }
-        </script>
     </head>
     <body>
-        <p>Les résultats du vote :</p>
-        <h2>Quel est votre préféré du couple ?</h2>
-        <p>Jérôme, assurément ! <div class="d1">1228</div></p>
-        <p>Jérôme, la plupart du temps <div class="d2">604</div></p>
-        <p>Tu es pathétique Thomas Merly, on voit bien qu'il n'y a pas autant d'invités <div class="d1">1</div></p>
+        <p>Les r�sultats du vote :</p>
+        <h2>Quel est votre pr�f�r� du couple ?</h2>
+        <p>J�r�me, assur�ment ! <div class="d1">1228</div></p>
+        <p>J�r�me, la plupart du temps <div class="d2">604</div></p>
+        <p>Tu es path�tique Thomas Merly, on voit bien qu'il n'y a pas autant d'invit�s <div class="d1">1</div></p>
     </body>
 </html>

@@ -15,21 +15,23 @@
                 if (!results[2]) return '';
                 return decodeURIComponent(results[2].replace(/\+/g, ' '));
             }
-
-            switch(getParameterByName('vote')) {
-                case 'sonia':
-                    document.getElementById('vote').innerHTML = "Sonia est sans doute la bont√© personifi√©e mais bon, je pr√©f√®re un peu plus J√©r√¥me";
-                    break;
-                case 'jerome':
-                    document.getElementById('vote').innerHTML = "J√©r√¥me est vraiment le moteur de ce couple, mais bon, des fois, Sonia a de bons c√¥t√©s";
-                    break;
-                default:
-                    document.getElementById('vote').innerHTML = "Je ne sais que choisir, alors √† d√©faut : J√©r√¥me";
-                    break;
-            }
         </script>
     </head>
     <body>
-        <p>Bonjour et merci d'avoir vot√© pour &laquo;<span id="vote"></span>&raquo;.</p>
+        <p>Bonjour et merci d'avoir votÈ pour &laquo;<span id="vote"></span>&raquo;.</p>
+        <script> <!--
+            switch(getParameterByName('vote')) {
+                case 'sonia':
+                    document.getElementById('vote').innerHTML = "Sonia est sans doute la bontÈ personifiÈe mais bon, je prÈfËre un peu plus JÈrÙme";
+                    break;
+                case 'jerome':
+                    document.getElementById('vote').innerHTML = "JÈrÙme est vraiment le moteur de ce couple, mais bon, des fois, Sonia a de bons cÙtÈs";
+                    break;
+                default:
+                    document.getElementById('vote').innerHTML = "Je ne sais que choisir, alors ‡ dÈfaut : JÈrÙme";
+                    break;
+            }
+            -->
+        </script>
     </body>
 </html>
