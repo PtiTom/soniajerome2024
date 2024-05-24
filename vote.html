@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, helvetica;
+                font-size: 24px;
+            }
+        </style>
+        <script>
+            function getParameterByName(name, url = window.location.href) {
+                name = name.replace(/[\[\]]/g, '\\$&');
+                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+        </script>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    </head>
+    <body>
+        <h3>Bonjour et merci d'avoir voté pour &laquo;<span id="vote"></span>&raquo;.</h3>
+        <p><img id="photo" style="width: 100%"/></p>
+        <script> <!--
+            switch(getParameterByName('vote')) {
+                case 'sonia':
+                    document.getElementById('vote').innerHTML = "Sonia est sans doute la bonté personifiée mais bon, je préfère un peu plus Jérôme";
+                    document.getElementById('photo').src = "Sonia4.jpg";
+                    break;
+                case 'jerome':
+                    document.getElementById('vote').innerHTML = "Jérôme est vraiment le moteur de ce couple, mais bon, des fois, Sonia a de bons côtés";
+                    document.getElementById('photo').src = "Jerome6.jpg";
+                    break;
+                default:
+                    document.getElementById('vote').innerHTML = "Je ne sais que choisir, alors à défaut : Jérôme";
+                    document.getElementById('photo').src = "Couple1.jpg";
+                    break;
+            }
+            -->
+        </script>
+    </body>
+</html>

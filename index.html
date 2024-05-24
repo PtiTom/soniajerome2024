@@ -3,7 +3,7 @@
         <style>
             body {
                 font-family: Arial, helvetica;
-                font-size: 14px;
+                font-size: 24px;
             }
         </style>
         <script>
@@ -16,22 +16,10 @@
                 return decodeURIComponent(results[2].replace(/\+/g, ' '));
             }
         </script>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     </head>
     <body>
-        <p>Bonjour et merci d'avoir voté pour &laquo;<span id="vote"></span>&raquo;.</p>
-        <script> <!--
-            switch(getParameterByName('vote')) {
-                case 'sonia':
-                    document.getElementById('vote').innerHTML = "Sonia est sans doute la bonté personifiée mais bon, je préfère un peu plus Jérôme";
-                    break;
-                case 'jerome':
-                    document.getElementById('vote').innerHTML = "Jérôme est vraiment le moteur de ce couple, mais bon, des fois, Sonia a de bons côtés";
-                    break;
-                default:
-                    document.getElementById('vote').innerHTML = "Je ne sais que choisir, alors à défaut : Jérôme";
-                    break;
-            }
-            -->
-        </script>
+        <h2>Wesh gros, bien ou bien ?.</h2>
+        <p>Ici, c'est mon fief alors on t'accueille à bras ouverts, mais seulement si tu as les bonnes valeurs.</p>
     </body>
 </html>
